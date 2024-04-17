@@ -1,0 +1,119 @@
+
+/* selector universal o global o de todo */
+*{
+    list-style: none;
+    text-decoration: none;
+    
+    font-size: 1rem;
+    font-weight: 400;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: "Tilt Neon", sans-serif;
+    
+    padding: unset;
+    margin:unset ;
+    border:solid 2px  red ;
+    
+    /* proxima clase */
+    box-sizing: border-box;
+    }
+
+    .navbar {
+        /* position: fixed; */
+        /* position: absolute;
+        z-index: 100; */
+        width: 100%;
+        padding: 10px 30px;
+        color: brown;
+        
+
+        background-color: rgb(122, 122, 122);
+    }
+    
+    
+    .navbar__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+     }
+
+     .navbar__nav h1 {
+        font-size: 3rem;
+     }
+
+    .reproductor {
+        display: flex;
+       flex-direction: unset;
+    }
+
+.Buscador {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 40px;
+
+    background-image: url(/ASSETS/pexels-koolshooters-.jpg);
+    background-size: 100%;
+    background-position: 0% 60%;
+    height: 600px;
+    margin: 30px;
+}
+
+.Buscador img {
+    height: 250px;
+}
+
+.Buscador h2 {
+    color: white;
+    font-size: 1.3rem;
+}
+
+    
+    .group {
+        display: flex;
+        line-height: 28px;
+        align-items: center;
+        position: relative;
+        max-width: 190px;
+       }
+       
+       .input {
+        width: 100%;
+        height: 40px;
+        line-height: 28px;
+        padding: 0 1rem;
+        padding-left: 2.5rem;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        outline: none;
+        background-color: #f3f3f4;
+        color: #0d0c22;
+        transition: .3s ease;
+       }
+       
+       .input::placeholder {
+        color: #9e9ea7;
+       }
+       
+       .input:focus, input:hover {
+        outline: none;
+        border-color: rgba(234,76,137,0.4);
+        background-color: #fff;
+        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+       }
+       
+       .icon {
+        position: absolute;
+        left: 1rem;
+        fill: #9e9ea7;
+        width: 1rem;
+        height: 1rem;
+       }
+       
+       
+       
+       
+       
