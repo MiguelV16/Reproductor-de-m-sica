@@ -41,10 +41,15 @@
         font-size: 3rem;
      }
 
-    .reproductor {
+     /* .main {
+        display: flex;
+     } */
+
+       .reproductor {
         display: flex;
        flex-direction: unset;
-    }
+       height: 100%;
+    } 
 
 .Buscador {
 
@@ -70,6 +75,15 @@
     color: white;
     font-size: 1.3rem;
 }
+
+
+.resultado {
+    background-color: #585858;
+}
+
+
+
+
 
     
     .group {
