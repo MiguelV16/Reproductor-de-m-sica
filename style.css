@@ -11,7 +11,7 @@
     
     padding: unset;
     margin:unset ;
-    border:solid 2px  red ;
+    /* border:solid 2px  red ; */
     
     /* proxima clase */
     box-sizing: border-box;
@@ -19,16 +19,21 @@
 
     .navbar {
         /* position: fixed; */
-        /* position: absolute;
-        z-index: 100; */
+        /* position: absolute;  */
+        z-index: 100;
         width: 100%;
         padding: 10px 30px;
         color: brown;
+        background-color: transparent;
+        box-sizing: border-box;
+        background-color: #363636;
         
-
-        background-color: rgb(122, 122, 122);
     }
     
+    .navbar h1 {
+        font-weight: bold;
+        text-decoration: line-through;
+    }
     
     .navbar__nav {
         display: flex;
@@ -49,85 +54,135 @@
         display: flex;
        flex-direction: unset;
        height: 100%;
+       justify-content: center;
+       gap: 20px;
+       background-color: #363636;
+       
     } 
 
-.Buscador {
+.reproductor__buscador {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    gap: 180px;
     padding: 40px;
 
     background-image: url(/ASSETS/pexels-koolshooters-.jpg);
     background-size: 100%;
     background-position: 0% 60%;
-    height: 600px;
-    margin: 30px;
+    height: 850px;
+    margin: 20px;
+    border-radius: 20px;
 }
 
-.Buscador img {
-    height: 250px;
+.reproductor__buscador img {
+    height: 300px;
 }
 
-.Buscador h2 {
+.reproductor__buscador h2 {
     color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    
+}
+
+.reproductor__lista{
+display: flex;
+flex-direction: column;
+gap: 8px;
+margin: 20px;
+}
+
+
+.lista__resultado {
+    background-color: #585858;
+    margin: 10px 90px;
+    display: flex;
+    padding: 5px;
+    color: #9e9ea7;
+    border-radius: 10px;
+}
+.lista__resultado p {
     font-size: 1.3rem;
 }
 
+.reproductor__lista__lista{
+    background-color: #8d0000;
+    padding: 10px;
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column;
+} 
 
-.resultado {
-    background-color: #585858;
+.reproductor__lista__lista div1 {
+    background-image: url(/ASSETS/pexels-koolshooters-.jpg);
+    background-size: 100%;
+    background-position: 0% 60%;
+    height: 150px;
 }
 
 
+ .div { 
+    color: #fff;
+    display: flex;
+    background-color: #727171;
+    margin: 10px 30px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.div img {
+    margin: 5px;
+} */
 
 
-
-    
-    .group {
-        display: flex;
-        line-height: 28px;
-        align-items: center;
-        position: relative;
-        max-width: 190px;
-       }
-       
-       .input {
-        width: 100%;
-        height: 40px;
-        line-height: 28px;
-        padding: 0 1rem;
-        padding-left: 2.5rem;
-        border: 2px solid transparent;
-        border-radius: 8px;
-        outline: none;
-        background-color: #f3f3f4;
-        color: #0d0c22;
-        transition: .3s ease;
-       }
-       
-       .input::placeholder {
-        color: #9e9ea7;
-       }
-       
-       .input:focus, input:hover {
-        outline: none;
-        border-color: rgba(234,76,137,0.4);
-        background-color: #fff;
-        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
-       }
-       
-       .icon {
-        position: absolute;
-        left: 1rem;
-        fill: #9e9ea7;
-        width: 1rem;
-        height: 1rem;
-       }
-       
-       
-       
-       
-       
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #363636;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #757474;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+   
