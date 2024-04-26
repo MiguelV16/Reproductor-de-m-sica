@@ -59,7 +59,7 @@ const vacio = null
  * *          multiplicación
  * **         potenciación
  * /          división
- * %
+ * %          residuo
  * 
  */
 
@@ -81,7 +81,7 @@ const suma = (num1, num2) => {
 const validarUsuario = (usuario) => {
 
     return (usuario.email != undefined &&
-           usuario.password !=undefined)
+           usuario.password != undefined)
 }
 
 
@@ -93,7 +93,38 @@ elemento.addEventListener('click', () => {
 
 
 axios.get("https://leonardoapi.onrender.com/songs")
-.then((data) => {
-    console.log(data)
-})
+.then(
+    // datos que vienen del servidor
+    (res) => {
+        const contenedor = document.getElementById("list-list")
+    
+      //recorrer las canciones
+    res.data.songs.map(
+        (song) => {
+            //esto se repite por cada canción
+            console.log(song)
+
+            const songHTML = document.createElement('div')
+            songHTML.classList.add("div")
+
+            songHTML.innerHTML = `
+            <img src="${song.path.front}" alt="imagen de una cabeza de robot">
+            <div>
+                <h3>${song.title} </h3>
+
+                <p>${song.duration}</p>
+            </div>
+            `
+             
+            songHTML.addEventListener('click' , () => {
+                  document.getElementById('current-song-audio').setAttribute('src', song.path.audio)
+                  document.getElementById('current-song-img').setAttribute('src', song.path.front)
+            })
+
+            contenedor.appendChild(songHTML)
+        }
+    )
+}
+
+)
 

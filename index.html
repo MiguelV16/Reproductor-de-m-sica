@@ -62,7 +62,7 @@
             <div class="reproductor__buscador">
                 <h2>REPRODUCE TUS CANCIONES 
                        FAVORITAS</h2>
-                <img src="/ASSETS/icn (1).svg" alt="Imagen de un disco de música">
+                <img src="/ASSETS/icn (2).svg" alt="Imagen de un disco de música">
 
                 <div class="group">
                     
@@ -79,18 +79,19 @@
                 </div>
 
                 <!-- reproductor o lista -->
-                <div class="reproductor__lista__lista">
-                    <!--cancion 1 -->
-                    <div class="div"> 
+                <div class="reproductor__lista__lista" id="list-list">
+                    
+                    <div class="div" id="identify"> 
                         <!-- id="identify" -->
-                        <img src="/ASSETS/Group 4.jpg" alt="imagen de una cabeza de robot">
+                        <!-- <img src="/ASSETS/Group 4.jpg" alt="imagen de una cabeza de robot">
+                        
                         <div>
                             <h3> Daft Punk - Get Lucky, feat. Pharrell Williams and Nile Rodgers </h3>
                             <img src="/ASSETS/Group 7.svg" alt="tiempo de la canción">
                             <p>1:20/4:08</p>
                         </div>
+
                     </div>
-                    <!--cancion 2  -->
                     <div class="div">
                         <img src="/ASSETS/Group 3.jpg" alt="imagen de una cabeza de robot">
                         <div>
@@ -99,7 +100,7 @@
                             <p>0:00/5:22</p>
                         </div>
                     </div>
-                    <!--cancion 3 -->
+                    
                     <div class="div">
                         <img src="/ASSETS/Group 3.jpg" alt="imagen de una cabeza de robot">
                         <div>
@@ -108,25 +109,30 @@
                             <p>0:00/4:11</p>
                         </div>
                     </div>
-                    <!--cancion 4 -->
+                    
                     <div class="div">
                         <img src="/ASSETS/Group 3.jpg" alt="imagen de una cabeza de robot">
                         <div>
                             <h3>Daft Punk - Around The World</h3>
                             <img src="/ASSETS/Group 5.svg" alt="tiempo de la canción">
                             <p>0:00/4:01</p>
-                        </div>
+                        </div> -->
                     </div>
                     <!--reproductor cancion 1 -->
-                    <div1 class="div">
-                        <img src="/ASSETS/Frame (4).svg" alt="icono de pausa">
-                        <div>
-                            <h3>Daft Punk - Get Lucky, feat. Pharrell Williams and Nile Rodgers</h3>
-                            <img src="/ASSETS/Group 7.svg" alt="tiempo de la canción">
-                            <p>1:20/4:08</p>
-                        </div>
+                    
+                </div>
+                <div1 class="current-song div">
+                    <img src="/ASSETS/Frame (4).svg" alt="icono de pausa" id="current-song-img">
+                    <div>
+                        <audio src="" controls id="current-song-audio"></audio>
+                        <h3 id="current-song-title">Daft Punk - Get Lucky, feat. Pharrell Williams and Nile Rodgers</h3>
+                        <img src="/ASSETS/Group 7.svg" alt="tiempo de la canción">
+                        <p id="current-song-duration">1:20/4:08</p>
+                        
                     </div>
-
+                    
+                    
+                    
                 </div>
 
             </div>

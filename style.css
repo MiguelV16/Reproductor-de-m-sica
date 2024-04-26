@@ -114,9 +114,19 @@ margin: 20px;
     
     display: flex;
     flex-direction: column;
+    /* height: 100px; */
 } 
 
-.reproductor__lista__lista div1 {
+ .reproductor__lista__lista img 
+    /* height: 100%; } */
+
+
+.reproductor__lista__lista > .div {
+
+    background-image: linear-gradient(45deg, #585858, #00000000);
+}
+
+.current-song {
     background-image: url(/ASSETS/pexels-koolshooters-.jpg);
     background-size: 100%;
     background-position: 0% 60%;
@@ -124,10 +134,10 @@ margin: 20px;
 }
 
 
- .div { 
+.div { 
     color: #fff;
     display: flex;
-    background-color: #727171;
+    /* background-image: linear-gradient(0deg, #727171, #00000000); */
     margin: 10px 30px;
     border-radius: 15px;
     padding: 10px;
